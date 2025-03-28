@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Meine Vorlesungs-App</title>
+  <title>Sribble</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -125,11 +125,11 @@
 </head>
 <body>
   <div class="container">
-    <h1>Live-Vorlesungs-App</h1>
+    <h1>Scrible</h1>
 
     <!-- Transkript-Bereich -->
     <div class="box">
-      <h2>Was die App mitschreibt</h2>
+      <h2>Transkript</h2>
       <div id="transcript">Noch nichts aufgezeichnet...</div>
       <button onclick="toggleRecording()">Start/Stop</button>
       <button class="delete-btn" onclick="clearTranscript()">Transkript löschen</button>
@@ -156,7 +156,7 @@
     let recognition;
     let fullTranscript = '';
 
-    // Backend-URL (lokal oder gehostet)
+    // Backend-URL 
     const BACKEND_URL = 'https://scribble-harc.onrender.com'; // Ersetze mit der Render-URL, wenn online
 
     function toggleRecording() {
